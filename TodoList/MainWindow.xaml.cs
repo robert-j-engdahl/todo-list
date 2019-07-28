@@ -3,17 +3,16 @@ using System.Windows;
 using Microsoft.EntityFrameworkCore;
 using TodoList.AddNewTodoItem;
 using TodoList.Common.Database;
+using TodoList.RemoveTodoItem;
 using TodoList.ShowTodoList;
 
 namespace TodoList
 {
-
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-
 
             if (!DesignerProperties.GetIsInDesignMode(this))
             {
@@ -29,6 +28,8 @@ namespace TodoList
 
                 showTodoListViewModel.Observe(newTodoItemViewModel);
                 showTodoListViewModel.Initialize();
+
+                Resources.Add("RemoveTodoItemCommand", new RemoveTodoItemCommand(() => new TodoDbContext()));
             }
         }
     }

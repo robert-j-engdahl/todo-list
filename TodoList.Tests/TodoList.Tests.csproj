@@ -139,6 +139,7 @@
   <ItemGroup>
     <Compile Include="AddNewTodoItem\NewTodoItemViewModelTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveTodoItem\RemoveTodoItemCommandTest.cs" />
     <Compile Include="ShowTodoList\ShowTodoListViewModelTest.cs" />
   </ItemGroup>
   <ItemGroup>

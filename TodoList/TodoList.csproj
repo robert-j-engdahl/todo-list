@@ -181,6 +181,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RemoveTodoItem\RemoveTodoItemCommand.cs" />
     <Compile Include="ShowTodoList\ShowTodoListViewModel.cs" />
     <Compile Include="ShowTodoList\ShowTodoListView.xaml.cs">
       <DependentUpon>ShowTodoListView.xaml</DependentUpon>
